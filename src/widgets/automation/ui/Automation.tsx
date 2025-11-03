@@ -41,7 +41,7 @@ export function Automation() {
             </div>
           ))}
         </div>
-        <div className={`${styles.preview} gradient-surface`}>
+        <div className={styles.preview}>
           <div className={styles.previewHeader}>
             Каналы коммуникации
             <span className={styles.badge}>AI-ассистент</span>

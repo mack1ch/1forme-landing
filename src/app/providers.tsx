@@ -8,11 +8,12 @@ export function Providers({ children }: PropsWithChildren) {
   const theme = useMemo(
     () => ({
       token: {
-        colorPrimary: '#7355FF',
+        colorPrimary: '#E6F36C',
+        colorInfo: '#E6F36C',
         fontFamily: 'var(--font-manrope)',
         colorBgContainer: '#ffffff',
-        colorText: '#1c1c1c',
-        borderRadius: 12,
+        colorText: '#111013',
+        borderRadius: 16,
       },
       algorithm: antdTheme.defaultAlgorithm,
     }),

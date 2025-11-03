@@ -18,7 +18,7 @@ export function Payroll() {
       subtitle="Автоматизируйте расчёт ставок, бонусов и мотивации. Экономьте до 27% на налогах благодаря подключению самозанятых через 1forme."
     >
       <div className={styles.wrapper}>
-        <div className={`${styles.summaryCard} gradient-surface`}>
+        <div className={styles.summaryCard}>
           <h3 className={styles.summaryTitle}>Единый центр финансов</h3>
           <p className={styles.summaryDescription}>
             Собираем платежи клиентов через эквайринг, учитываем абонементы и автоматически начисляем зарплаты тренерам.
@@ -26,7 +26,8 @@ export function Payroll() {
           <Progress
             percent={86}
             status="active"
-            strokeColor={{ from: '#7355FF', to: '#00C6AE' }}
+            strokeColor={{ from: '#e6f36c', to: '#cde23d' }}
+            trailColor="rgba(214, 222, 186, 0.4)"
             showInfo={false}
           />
           <ul className={styles.list}>

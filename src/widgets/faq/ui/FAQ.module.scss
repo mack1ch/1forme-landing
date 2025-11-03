@@ -1,13 +1,38 @@
 .faq {
-  border-radius: 28px;
-  padding: 24px;
-  background: #ffffff;
-  border: 1px solid rgba(17, 16, 19, 0.05);
-  box-shadow: 0 20px 40px rgba(17, 16, 19, 0.05);
+  border-radius: 32px;
+  padding: clamp(20px, 3vw, 32px);
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.94), rgba(230, 243, 108, 0.2));
+  border: 1px solid rgba(214, 222, 186, 0.85);
+}
+
+.faq :global(.ant-collapse) {
+  background: transparent;
+}
+
+.faq :global(.ant-collapse-item) {
+  border-bottom: 1px solid rgba(214, 222, 186, 0.6) !important;
+}
+
+.faq :global(.ant-collapse-item:last-child) {
+  border-bottom: none !important;
+}
+
+.faq :global(.ant-collapse-header) {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.faq :global(.ant-collapse-content) {
+  background: transparent;
+}
+
+.faq :global(.ant-collapse-content-box) {
+  color: var(--color-muted);
+  font-size: 1rem;
 }
 
 @media (max-width: 600px) {
   .faq {
-    padding: 16px;
+    padding: 20px;
   }
 }

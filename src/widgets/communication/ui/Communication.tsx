@@ -57,7 +57,7 @@ export function Communication() {
       subtitle="Строим коммуникацию, которая работает и без вашего участия. Все взаимодействия фиксируются в карточке клиента — ничего не потеряется."
     >
       <div className={styles.wrapper}>
-        <div className={`${styles.messageBoard} gradient-surface`}>
+        <div className={styles.messageBoard}>
           {messages.map((message) => (
             <div key={message.time} className={styles.message}>
               <div className={styles.messageHeader}>
@@ -68,7 +68,7 @@ export function Communication() {
                 <span className={styles.messageTime}>{message.time}</span>
               </div>
               <p>{message.text}</p>
-              <Tag color="purple">{message.tag}</Tag>
+              <Tag>{message.tag}</Tag>
             </div>
           ))}
         </div>
