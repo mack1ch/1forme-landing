@@ -7,7 +7,7 @@ import { ArrowRightOutlined, CalendarOutlined } from '@ant-design/icons';
 export function CTA() {
   return (
     <div className="section-container">
-      <div className={`${styles.cta} gradient-surface`}>
+      <div className={styles.cta}>
         <p className={styles.title}>Готовы сделать студию управляемой?</p>
         <p className={styles.description}>
           Оставьте заявку, и в течение 24 часов мы покажем, как 1forme помогает студиям увеличивать прибыль, снижать
