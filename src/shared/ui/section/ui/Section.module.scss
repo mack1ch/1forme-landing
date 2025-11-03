@@ -1,0 +1,33 @@
+.section {
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--color-dark);
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--color-muted);
+  max-width: 720px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-bottom: 32px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}

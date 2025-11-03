@@ -1,0 +1,76 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.messageBoard {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 32px;
+  border-radius: 28px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(115, 85, 255, 0.12);
+}
+
+.messageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.messageSender {
+  font-weight: 600;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.messageTime {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.channels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.channelCard {
+  padding: 20px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 16, 19, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.channelTitle {
+  font-weight: 700;
+}
+
+.channelDescription {
+  color: var(--color-muted);
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .channels {
+    grid-template-columns: 1fr;
+  }
+}
